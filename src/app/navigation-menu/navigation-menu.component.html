@@ -1,0 +1,17 @@
+
+
+<div>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+     <mat-icon>menu</mat-icon>
+     <span>Menu</span>
+    </button>
+    <mat-menu #menu="matMenu">
+     <button mat-menu-item routerLink = "/listContents">
+     <span>List Contents</span>
+     </button>
+     <button mat-menu-item routerLink = "/addContent">
+     <span>Add Content</span>
+     </button>
+    </mat-menu>
+    </div>
+

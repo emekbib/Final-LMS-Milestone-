@@ -1,0 +1,31 @@
+<div>
+    <h3>{{mode}}Assignments</h3>
+<form (ngSubmit)="onSubmit()" #myForm="ngForm">
+    <h1> Assigments  </h1>
+    <h1> Labs </h1>
+    
+    <label for="Files to submit"> 
+        Files to submit * <br><br> <b>(0) file(s) to submit </b> </label>
+     <br><br>
+     
+     <label for="Lab1"> <b>After uploading, you must click Submit to complete the submission. </b> <br> <br> Lab 1: </label>
+            <input type="file" id="Lab1" [(ngModel)]="Lab1" name="Lab1" >
+    <br>
+    <br>
+        <label for="Comment1s">Comments: </label>
+        <input id="Comments1:" type="text" id="Comments1" [(ngModel)]="Comments1" name="Comments1" >
+    <br>
+
+    <label for="Lab2"> <b>After uploading, you must click Submit to complete the submission. </b> <br> <br> Lab 2: </label>
+            <input type="file"  id="Lab2" [(ngModel)]="Lab2" name="Lab2" >
+    <br>
+    <label for="Comments2">Comments: </label>
+    <input input id="Comments2:" type="text"  id="Comments2" [(ngModel)]="Comments2" name="Comments2" >
+    <br>
+    <label for="Lab2"> <b>After uploading, you must click Submit to complete the submission. </b> <br> <br> </label>
+        <p>
+            <button type="submit" mat-raised-button color="primary">Submit</button>
+        </p>
+    <br>
+</form>
+    </div>

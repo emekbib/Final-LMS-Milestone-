@@ -1,0 +1,20 @@
+<div>
+  <h3>{{mode}} Announcements</h3>
+  <form (ngSubmit)="onSubmit()" #myForm="ngForm">
+      <mat-form-field>
+          <input matInput placeholder="Announcement Title" id="title" [(ngModel)]="title" name="title">
+      </mat-form-field>
+
+      <mat-form-field>
+          <input matInput placeholder="Announcement Author" id="author" [(ngModel)]="author" name="author">
+      </mat-form-field>
+
+      <mat-form-field>
+          <input matInput placeholder="Announcement Body" id="body" [(ngModel)]="body" name="body">
+      </mat-form-field>
+
+      <p>
+          <button type="submit">Submit</button>
+      </p>
+  </form>
+</div>

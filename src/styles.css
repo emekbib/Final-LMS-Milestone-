@@ -1,0 +1,67 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color: lightgray;
+}
+
+.abovetopnav {
+  background-color: gold;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  height: 35px;
+}
+
+.topnav {
+  background-color: black;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a.logo {
+  float: left;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: lightgrey;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: lightgrey;
+  color: white;
+}
+
+.belowtopnav {
+  background-color: gold;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  height: 25px;
+}
+
+
+.ResultsTable {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+
+

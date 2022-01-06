@@ -1,0 +1,14 @@
+
+
+<div>
+    <ul *ngFor ="let content of contents let i = index">
+        <li> {{content._id}}: {{content.Title}} {{content.Content}} {{content.Description}} {{content.Attachment}} (index {{i}})
+            <button mat-button color="warn" (click)="onDelete(content._id)">DELETE</button>
+            <button mat-button color="accent" [routerLink]="['/editContent', content._id]">UPDATE</button>
+        </li>
+    </ul>
+  </div>
+
+
+
+

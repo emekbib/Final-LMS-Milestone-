@@ -1,0 +1,30 @@
+
+input {
+    text-align: left;
+    margin: 5px 0;
+    display: block;
+    width: 400px;
+    height: auto;
+    background-color: white;
+    border-style: solid black;
+    
+}
+
+p {
+    text-align: left;
+}
+
+mat-form-field{
+    text-align: left;
+    margin: 40px 0;
+    display: block;
+    width: 400px;
+    height: auto;   
+    background-color: white;
+    border-style: solid black;
+}
+
+input.placeholder{
+    text-align: left;
+    padding-right: 10px;
+}

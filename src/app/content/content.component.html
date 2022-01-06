@@ -1,0 +1,23 @@
+
+<br>
+<!-- This is on content.component.html -->
+<div>
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+  <h2>{{mode}} your Content Information Below</h2>
+  <label for="Title">Title (Required): </label>
+  <input id="Title" type="text" formControlName="Title" [(ngModel)]="Title">
+  <br>
+  <label for="Content">Content (Required): </label>
+  <input id="Content" type="text" size=75 formControlName="Content" [(ngModel)]="Content">
+  <br>
+  <label for="Description">Description (Optional): </label>
+  <input id="Description" type="text" formControlName="Description" [(ngModel)]="Description">
+  <br>  
+  <label for="Attachment">Attachment (Optional): </label>
+  <input id="Attachment" type="file" formControlName="Attachment" [(ngModel)]="Attachment">
+  <p>Complete the form to enable the Submit button.</p>
+  <button type="submit" [disabled]="!profileForm.valid">Submit</button>
+  <p>Form Status: {{ profileForm.status }}</p>
+</form>
+</div>
+

@@ -1,0 +1,66 @@
+
+<div class="content-container">
+    <form [formGroup]="searchForm" (ngSubmit)="onSubmit()">
+        Search Youtube For Videos:
+        <input type="text" formControlName="keyword">
+        <span>&nbsp;</span>
+        <button type="submit" (submit)="onSubmit()">Go</button>
+    </form>
+    <br>
+    <br>
+    <div *ngIf="condition">
+        <table  >
+            <thead >
+              <tr >
+                <th >#</th>
+                <th >PublishedDate</th>
+                <th >Title</th>
+                <th >Description</th>
+                <th >Thumbnail</th>
+                <th >URL</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let video of videos.items let i = index">
+                <td> {{i}}</td>
+                <td> {{video.snippet.publishedAt}}</td>
+                <td> {{video.snippet.title}}</td>
+                <td> {{video.snippet.description}}</td>
+                <td> <img src={{video.snippet.thumbnails.default.url}}> </td>
+                <td> <a href="https://www.youtube.com/watch?v={{video.id.videoId}}">https://www.youtube.com/watch?v={{video.id.videoId}}</a> </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    
+
+</div>
+
+
+    
+<!-- 
+<p>video-search works!</p>
+
+                <td>
+                  <button (click)="https://www.youtube.com/watch?v={{video.id.videoId}}"> Watch the Video! </button>
+                </td>
+
+
+    <div class="card text-center" *ngIf="selectedBook">
+        <div class="card-header">
+        Book Details
+        </div>
+        <div class="card-block">
+        <h4 class="card-title">{{selectedBook.volumeInfo.title}}</h4>
+        <div class="card-text">
+            {{selectedBook.volumeInfo.description}}
+            <p>{{selectedBook.volumeInfo.authors}}</p>
+            <p>{{selectedBook.volumeInfo.publisher}}</p>
+            <p>{{selectedBook.volumeInfo.publishedDate}}</p>
+            <img src={{selectedBook.volumeInfo.imageLinks.thumbnail}}>
+        </div>    
+        </div>
+    </div>
+-->
+
+
